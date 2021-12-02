@@ -25,19 +25,11 @@ body {
 
 }
 
-@media  screen and (max-width: 375px) {
-    body {
-        background-image:url(images/pattern-background-mobile.svg);
-    }
-    .card {
-        width: 300px;
-    }
-}
 
 .card {
     width: 400px;
     height: 620px;
-    padding: 0;
+    padding: 0 0 1rem 0;
     margin: 0 auto;
     border: none;
     border-radius: 10px;
@@ -47,6 +39,15 @@ body {
     justify-content: space-between;
 }
 
+@media  screen and (max-width: 375px) {
+    body {
+        background-image: url(images/pattern-background-mobile.svg);
+        background-size: contain;
+    }
+    .card {
+        width: 300px;
+    }
+}
 .imageSection {
     height: 220px;
     background-image: url(images/illustration-hero.svg);
@@ -86,17 +87,34 @@ body {
 .change {
     grid-area: 1/7/2/8;
     margin: auto;
+    text-decoration: none;
+    color: inherit;
 }
 
 .paymentButton {
+    font-size: 0.85rem;
     margin: 0 2.8rem;
     padding: 1rem;
     color: var(--veryPaleBlue);
     background-color: var(--brightBlue);
     border: none;
     border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    cursor: pointer;
 }
 
+.paymentButton:hover {
+    background-color: rgba(126, 114, 231, 0.933);
+}
+
+.cancelOrder {
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.cancelOrder:hover, .change:hover {
+    color: var(--darkBlue);
+}
 
 
 
