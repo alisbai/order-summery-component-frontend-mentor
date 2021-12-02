@@ -5,29 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- my style file -->
+
+  <link rel="stylesheet" href="style.css" type="text/css">
   
   <title>Frontend Mentor | Order summary card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <main class="card">
 
-  Order Summary
+    <div class="imageSection"></div>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+    <h2 class="summary">Order Summary</h2>
 
-  Annual Plan
-  $59.99/year
+    <p class="description">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
 
-  Change
+    <div class="plan">
+      <object data="images/icon-music.svg" class="musicIcon"></object>
+      <div class="planType">
+        <p  class="annual"><b>Annual Plan</b></p>
+        <p class="price">$500/year</p>
+      </div>
+      <a href="#" class="change">Change</a>
+    </div>
 
-  Proceed to Payment
-  Cancel Order
+    <button class="paymentButton">Proceed To Payment</button>
+
+    <p class="cancelOrder">Cancel Order</p>
+  </main>
+  
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

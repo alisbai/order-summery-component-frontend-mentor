@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&family=Red+Hat+Display:wght@300;400;500&family=Red+Hat+Mono&display=swap');
+
+html {
+    --paleBlue: hsl(225, 100%, 94%);
+    --desaturatedBlue: hsl(224, 23%, 55%);
+    --veryPaleBlue:hsl(225, 100%, 98%);
+    --darkBlue: hsl(223, 47%, 23%);
+    --brightBlue:hsl(245, 75%, 52%);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Red Hat Display", sans-serif;
+    color: var(--desaturatedBlue);
+    text-align: center;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--paleBlue);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+
+}
+
+@media  screen and (max-width: 375px) {
+    body {
+        background-image:url(images/pattern-background-mobile.svg);
+    }
+    .card {
+        width: 300px;
+    }
+}
+
+.card {
+    width: 400px;
+    height: 620px;
+    padding: 0;
+    margin: 0 auto;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.imageSection {
+    height: 220px;
+    background-image: url(images/illustration-hero.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.description {
+    color: var(--desaturatedBlue);
+    margin: 0 3rem;
+}
+.plan {
+    font-size: 0.8rem;
+    display: grid;
+    margin: 0 2.8rem;
+    background-color: var(--veryPaleBlue);
+    border-radius: 10px;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.musicIcon {
+    grid-area: 1/1/2/2;
+    margin: auto;
+}
+
+.planType {
+    grid-area: 1/2/2/3;
+}
+
+.annual, .summary {
+    color: var(--darkBlue);
+}
+
+.change {
+    grid-area: 1/7/2/8;
+    margin: auto;
+}
+
+.paymentButton {
+    margin: 0 2.8rem;
+    padding: 1rem;
+    color: var(--veryPaleBlue);
+    background-color: var(--brightBlue);
+    border: none;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
