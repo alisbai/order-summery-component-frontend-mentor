@@ -16,10 +16,12 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     min-height: 100vh;
     background-color: var(--paleBlue);
     background-image: url(images/pattern-background-desktop.svg);
-    background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
 
@@ -39,7 +41,7 @@ body {
     justify-content: space-between;
 }
 
-@media  screen and (max-width: 375px) {
+@media  screen and (max-width: 420px) {
     body {
         background-image: url(images/pattern-background-mobile.svg);
         background-size: contain;
